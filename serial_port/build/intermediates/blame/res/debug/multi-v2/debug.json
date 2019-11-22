@@ -1,0 +1,57 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "76,77",
+                        "startColumns": "4,4",
+                        "startOffsets": "2275,2325",
+                        "endColumns": "49,68",
+                        "endOffsets": "2320,2389"
+                    }
+                },
+                {
+                    "source": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\src\\main\\res\\values\\baudrates.xml",
+                    "from": {
+                        "startLines": "-1,-1",
+                        "startColumns": "-1,-1",
+                        "startOffsets": "-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,34",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,925",
+                        "endLines": "33,65",
+                        "endColumns": "19,19",
+                        "endOffsets": "920,1791"
+                    }
+                },
+                {
+                    "source": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "4,5,10,9,8,2,3,7,6,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "157,204,441,391,340,57,105,296,250,488",
+                        "endColumns": "45,44,43,48,49,46,50,42,44,58",
+                        "endOffsets": "198,244,480,435,385,99,151,334,290,542"
+                    },
+                    "to": {
+                        "startLines": "66,67,68,69,70,71,72,73,74,75",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1796,1842,1887,1931,1980,2030,2077,2128,2171,2216",
+                        "endColumns": "45,44,43,48,49,46,50,42,44,58",
+                        "endOffsets": "1837,1882,1926,1975,2025,2072,2123,2166,2211,2270"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="@string/mic_title"
+        android:textSize="26sp" />
+    <TextView 
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title"
+        android:textColor="@color/red"
+        android:visibility="gone"/>
+
+    <TextView 
+        	android:id="@+id/config"
+        	android:layout_below="@id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/config" 
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/maxtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config"
+        android:layout_marginTop="-10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/maxtime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/max_test_time_limit"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/maxtime_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="@string/camera_set" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/msglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/maxtime"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recording"
+            android:textSize="20sp"
+            android:textColor="@color/blue"/>
+        
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_start" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_stop" />
+
+        <Button
+            android:id="@+id/exit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_exit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

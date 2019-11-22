@@ -1,0 +1,6 @@
+#²âÊÔÄ£¿éÅäÖÃÊ¾Àı
+
+#           RebootTest,SleepTest,CameraTest,VideoTest,WifiOpenTest,BluetoothOpenTest,FlyModeOpenTest,AgingTestMain,MicTest,SerialPortTest,SmsSendTest,CallNumTest,RecoveryTest,BoardidSwitchTest,ArmFreqTest
+testItems = RebootTest,SleepTest,CameraTest,VideoTest,WifiOpenTest,BluetoothOpenTest,FlyModeOpenTest,AgingTestMain,MicTest,ComTest
+
+

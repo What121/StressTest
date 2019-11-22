@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/slategrey"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/resultdialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试结果"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="50sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/resultdialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="maxtimes:**
+                          curtimes:**"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="35sp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/resultdialog_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="true"/>
+
+    <!--<com.wang.avi.AVLoadingIndicatorView-->
+        <!--android:id="@+id/avi"-->
+        <!--style="@style/AVLoadingIndicatorView.Large"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--app:indicatorColor="#FF0000"-->
+        <!--app:indicatorName="LineSpinFadeLoaderIndicator" />-->
+
+</LinearLayout>

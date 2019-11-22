@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.4.1">
+
+    <issue
+        id="MissingDefaultResource"
+        severity="Fatal"
+        message="The layout &quot;main&quot; in layout-land has no declaration in the base `layout` folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier"
+        category="Correctness"
+        priority="6"
+        summary="Missing Default"
+        explanation="If a resource is only defined in folders with qualifiers like `-land` or `-en`, and there is no default declaration in the base folder (`layout` or `values` etc), then the app will crash if that resource is accessed on a device where the device is in a configuration missing the given qualifier.&#xA;&#xA;As a special case, drawables do not have to be specified in the base folder; if there is a match in a density folder (such as `drawable-mdpi`) that image will be used and scaled. Note however that if you  only specify a drawable in a folder like `drawable-en-hdpi`, the app will crash in non-English locales.&#xA;&#xA;There may be scenarios where you have a resource, such as a `-fr` drawable, which is only referenced from some other resource with the same qualifiers (such as a `-fr` style), which itself has safe fallbacks. However, this still makes it possible for somebody to accidentally reference the drawable and crash, so it is safer to create a default dummy fallback in the base folder. Alternatively, you can suppress the issue by adding `tools:ignore=&quot;MissingDefaultResource&quot;` on the element.&#xA;&#xA;(This scenario frequently happens with string translations, where you might delete code and the corresponding resources, but forget to delete a translation. There is a dedicated issue id for that scenario, with the id `ExtraTranslation`.)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2=" ~~~~~~~~~~~~">
+        <location
+            file="D:\Work\Android\CommProject\ComAssistant-master-master\app\src\main\res\layout-land\main.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="MissingDefaultResource"
+        severity="Fatal"
+        message="The layout &quot;main&quot; in layout-port has no declaration in the base `layout` folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier"
+        category="Correctness"
+        priority="6"
+        summary="Missing Default"
+        explanation="If a resource is only defined in folders with qualifiers like `-land` or `-en`, and there is no default declaration in the base folder (`layout` or `values` etc), then the app will crash if that resource is accessed on a device where the device is in a configuration missing the given qualifier.&#xA;&#xA;As a special case, drawables do not have to be specified in the base folder; if there is a match in a density folder (such as `drawable-mdpi`) that image will be used and scaled. Note however that if you  only specify a drawable in a folder like `drawable-en-hdpi`, the app will crash in non-English locales.&#xA;&#xA;There may be scenarios where you have a resource, such as a `-fr` drawable, which is only referenced from some other resource with the same qualifiers (such as a `-fr` style), which itself has safe fallbacks. However, this still makes it possible for somebody to accidentally reference the drawable and crash, so it is safer to create a default dummy fallback in the base folder. Alternatively, you can suppress the issue by adding `tools:ignore=&quot;MissingDefaultResource&quot;` on the element.&#xA;&#xA;(This scenario frequently happens with string translations, where you might delete code and the corresponding resources, but forget to delete a translation. There is a dedicated issue id for that scenario, with the id `ExtraTranslation`.)"
+        errorLine1="&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2=" ~~~~~~~~~~~~">
+        <location
+            file="D:\Work\Android\CommProject\ComAssistant-master-master\app\src\main\res\layout-port\main.xml"
+            line="2"
+            column="2"/>
+    </issue>
+
+    <issue
+        id="ExpiredTargetSdkVersion"
+        severity="Fatal"
+        message="Google Play requires that apps target API level 26 or higher.&#xA;"
+        category="Compliance"
+        priority="8"
+        summary="TargetSdkVersion No Longer Supported"
+        explanation="As of the second half of 2018, Google Play requires that new apps and app updates target API level 26 or higher.&#xA;&#xA;Configuring your app to target a recent API level ensures that users benefit from significant security and performance improvements, while still allowing your app to run on older Android versions (down to the `minSdkVersion`).&#xA;&#xA;To update your `targetSdkVersion`, follow the steps from &quot;Meeting Google Play requirements for target API level&quot;,&#xA;https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        url="https://support.google.com/googleplay/android-developer/answer/113469#targetsdk"
+        urls="https://support.google.com/googleplay/android-developer/answer/113469#targetsdk,https://support.google.com/googleplay/android-developer/answer/113469#targetsdk,https://developer.android.com/distribute/best-practices/develop/target-sdk.html"
+        errorLine1="        targetSdkVersion 21"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="D:\Work\Android\CommProject\ComAssistant-master-master\app\build.gradle"
+            line="9"
+            column="9"/>
+    </issue>
+
+</issues>

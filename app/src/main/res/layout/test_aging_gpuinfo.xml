@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_gpu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gpu_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"/>
+
+    <!-- gpu频率 -->
+    <TextView
+        android:id="@+id/tv_gpu_currfreq_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gpu_curr_freq"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"
+        android:paddingTop="2dp"
+        android:paddingLeft="@dimen/cpu_info_padleft"
+        android:layout_below="@id/tv_gpu_title"
+        android:layout_toRightOf="@id/tv_gpu_title"/>
+    <TextView
+        android:id="@+id/tv_gpu_currfreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/cpu_info_padleft"
+        android:layout_alignTop="@id/tv_gpu_currfreq_title"
+        android:layout_toRightOf="@id/tv_gpu_currfreq_title"/>
+
+    <!-- gpu使用率 -->
+    <TextView
+        android:id="@+id/tv_gpu_usage_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gpu_usage"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/cpu_info_padleft"
+        android:layout_below="@id/tv_gpu_currfreq_title"
+        android:layout_alignRight="@id/tv_gpu_currfreq_title"/>
+
+    <TextView
+        android:id="@+id/tv_gpu_usage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/cpu_info_padleft"
+        android:layout_alignTop="@id/tv_gpu_usage_title"
+        android:layout_toRightOf="@id/tv_gpu_usage_title"/>
+
+    <!-- GPU温度-->
+    <TextView
+        android:id="@+id/tv_gpu_temp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gpu_temp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/cpu_info_padleft"
+        android:layout_below="@id/tv_gpu_usage_title"
+        android:layout_alignRight="@id/tv_gpu_usage_title"/>
+
+    <TextView
+        android:id="@+id/tv_gpu_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/aging_item_size"
+        android:contentDescription="@null"
+        android:paddingLeft="@dimen/cpu_info_padleft"
+        android:layout_alignTop="@id/tv_gpu_temp_title"
+        android:layout_toRightOf="@id/tv_gpu_temp_title"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/pub_horizontal_margin"
+    android:paddingRight="@dimen/pub_horizontal_margin"
+    android:paddingBottom="5dp"
+	android:paddingTop="5dp"
+	android:background="@color/darkslategray"
+    android:orientation="vertical">
+	<!---->
+
+   	<!-- Header -->
+   	<RelativeLayout
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/main_icon"
+			android:drawablePadding="@dimen/pub_title_padleft"
+			android:gravity="center"
+			android:text="@string/aging_test_title"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/pub_title_size" />
+	   	<TextView
+			android:visibility="gone"
+	   	    android:id="@+id/tv_soft_ver2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:gravity="top"
+	        android:textColor="@android:color/white"
+	        android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_head_line"/>
+    
+    <!-- Content -->
+    <LinearLayout
+        android:id="@+id/main_content"
+       	android:layout_width="match_parent"
+       	android:layout_height="match_parent"
+       	android:orientation="vertical">
+       	<!-- CPU Memory -->
+       	<LinearLayout
+	       	android:layout_width="match_parent"
+	       	android:layout_height="0dip"
+	       	android:layout_weight="0.5"
+	       	android:orientation="horizontal">
+        	<LinearLayout
+		       	android:layout_width="0dip"
+		       	android:layout_height="match_parent"
+		       	android:layout_weight="0.5"
+		       	android:orientation="horizontal"
+	        	android:background="@drawable/main_list_item_bg">
+	        	<include layout="@layout/test_aging_cpu"/>
+	        </LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dip"
+				android:layout_height="match_parent"
+				android:layout_weight="0.5"
+				android:orientation="horizontal"
+				android:background="@drawable/main_list_item_bg">
+				<include layout="@layout/test_aging_gpuinfo"/>
+			</LinearLayout>
+
+	        <LinearLayout
+		       	android:layout_width="0dip"
+		       	android:layout_height="match_parent"
+		       	android:layout_weight="0.5"
+		       	android:orientation="horizontal"
+	        	android:background="@drawable/main_list_item_bg">
+	        	<include layout="@layout/test_aging_memory"/>
+	        </LinearLayout>
+   		</LinearLayout>
+   		
+   		<!-- GPU VPU -->
+   		<LinearLayout
+	       	android:layout_width="match_parent"
+	       	android:layout_height="0dip"
+	       	android:layout_weight="0.5"
+	       	android:orientation="horizontal">
+        	<LinearLayout
+		       	android:layout_width="0dip"
+		       	android:layout_height="match_parent"
+		       	android:layout_weight="0.5"
+		       	android:orientation="horizontal"
+	        	android:background="@drawable/main_list_item_bg">
+	        	<include layout="@layout/test_aging_gpu"/>
+	        </LinearLayout>
+	        <LinearLayout
+		       	android:layout_width="0dip"
+		       	android:layout_height="match_parent"
+		       	android:layout_weight="0.5"
+		       	android:orientation="horizontal"
+	        	android:background="@drawable/main_list_item_bg">
+	        	<include layout="@layout/test_aging_vpu"/>
+	        </LinearLayout>
+   		</LinearLayout>
+ 	</LinearLayout>
+
+</LinearLayout>
+

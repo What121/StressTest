@@ -1,0 +1,22 @@
+#≤‚ ‘ƒ£øÈ≈‰÷√
+# data/data/com.bestom.producetest/testMain_config
+# websocket service
+localhost    = ws://192.168.1.124:2333
+
+# 1?true:false
+LcdTest      = 1
+CameraTest   = 1
+SensorTest   = 1
+GSensorTest  = 1
+LightSensorTest  = 1
+NfcTest      = 1
+NfcLightTest = 1
+GpioTest     = 0
+gpioTest     = 1
+NetTest      = 1
+
+#T103≈‰÷√
+T103_usbgpio = 0
+
+#rk3399server≈‰÷√
+RK3399server_2camera = 0

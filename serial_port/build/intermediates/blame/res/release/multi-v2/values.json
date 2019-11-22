@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "125,56",
+                        "endColumns": "49,68",
+                        "endOffsets": "170,120"
+                    },
+                    "to": {
+                        "startLines": "66,67",
+                        "startColumns": "4,4",
+                        "startOffsets": "1796,1846",
+                        "endColumns": "49,68",
+                        "endOffsets": "1841,1910"
+                    }
+                },
+                {
+                    "source": "D:\\Work\\Android\\CommProject\\ComAssistant-master-master\\app\\src\\main\\res\\values\\baudrates.xml",
+                    "from": {
+                        "startLines": "3,35",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,926",
+                        "endLines": "34,66",
+                        "endColumns": "19,19",
+                        "endOffsets": "921,1792"
+                    },
+                    "to": {
+                        "startLines": "2,34",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,925",
+                        "endLines": "33,65",
+                        "endColumns": "19,19",
+                        "endOffsets": "920,1791"
+                    }
+                }
+            ]
+        }
+    ]
+}

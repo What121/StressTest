@@ -1,0 +1,14 @@
+#老化测试模块配置示例
+#Memory test cmd: stressapptest -M 128 -s 120 -m 1 -C 6
+#-M MemorySize Megabytes of ram to run  尽可能测试最大的可用存储空间，（设置超过了memfree，就会被kill）
+MemorySize  = 128
+#-s MemoryTime
+MemoryTime  = 240
+#-m Memory Copy Thread number
+ThreadNum   = 1
+#-i number of memory invert threads to run  反转线程数 (Invert Copy)
+InvertThreadNum   = 1
+#-C number of memory CPU stress threads to run
+CPUCores    = 4
+#loop test flag==1?true:false
+loopflag    = 0
